@@ -58,28 +58,45 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    transition: 1s;
 }
 .meme_img_1 {
-    display: none;
-    width: 319px;
-    height: 311px;
+    transition: all 1s;
+    width: 0;
+    height: 0;
     background-image: url(./img/1.png);
 }
 .meme_img_2 {
-    display: none;
-    width: 326px;
-    height: 451px;
+    transition: all 1s;
+    width: 0;
+    height: 0;
     background-image: url(./img/2.png);
 }
 .meme_img_3 {
-    display: none;
-    width: 468px;
-    height: 483px;
+    transition: all 1s;
+    width: 0;
+    height: 0;
     background-image: url(./img/3.png);
 }
 .meme_img_4 {
-    display: none;
+    transition: all 1s;
+    width: 0;
+    height: 0;
+    background-image: url(./img/4.png);
+}
+.meme_item_1:hover .meme_img_1{
+    width: 319px;
+    height: 311px;
+}
+.meme_item_2:hover .meme_img_2{
+    width: 326px;
+    height: 451px;
+}
+.meme_item_3:hover .meme_img_3{
+    width: 468px;
+    height: 483px;
+}
+.meme_item_4:hover .meme_img_4{
     width: 525px;
     height: 500px;
-    background-image: url(./img/4.png);
 }
