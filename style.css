@@ -1,0 +1,213 @@
+body {
+    background-color: #f8f8ff;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 43.75rem;
+    margin: 1.25rem auto;
+
+}
+.line {
+    border-bottom: 0.125rem solid #383846;
+    opacity: 20%;
+    margin-bottom: 0.625rem;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meme_title{
+    color: #8b8bc7;
+    display: block;
+    cursor: pointer;
+}
+.meme_crosshair{
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    width: 0.938rem;
+    height: 0.938rem;
+}
+.cross_img{
+    width: 0.75rem;
+}
+.crosshair_line_1{
+    rotate: 90deg;
+    display: block;
+    width: 0.938rem;
+    color: #717171;
+    border: 0.063rem solid #717171;
+}
+.crosshair_line_2{
+    display: block;
+    width: 0.938rem;
+    color: #717171;
+    border: 0.063rem solid #717171;
+}
+.meme_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    transition: 1s;
+}
+.meme_img_1 {
+    transition: all 0.7s ease-in-out;
+    height: 0;
+	overflow: hidden;
+}
+.meme_img_2 {
+    transition: all 0.7s ease-in-out;
+    height: 0;
+	overflow: hidden;
+}
+.meme_img_3 {
+    transition: all 0.7s ease-in-out;
+    height: 0;
+	overflow: hidden;
+}
+.meme_img_4 {
+    transition: all 0.7s ease-in-out;
+    height: 0;
+	overflow: hidden;
+}
+.meme_img_5 {
+    transition: all 0.7s ease-in-out;
+    height: 0;
+	overflow: hidden;
+}
+.radio_meme{
+    width: 0%;
+    height: 0%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.meme_label_1{
+    display: block;
+}
+.radio_meme_1:checked ~ .meme_img .meme_img_1{
+    height: 20rem;
+}
+.radio_meme_1:checked ~ .title .meme_title{
+    color: black;
+}
+.radio_meme_1:checked ~ .title .meme_crosshair{
+    opacity: 1;
+    transition: 0.2s;
+    rotate: 45deg;
+}
+
+.radio_meme_2:checked ~ .meme_img .meme_img_2{
+    height: 20rem;
+}
+.radio_meme_2:checked ~ .title .meme_title{
+    color: black;
+}
+.radio_meme_2:checked ~ .title .meme_crosshair{
+    opacity: 1;
+    transition: 0.2s;
+    rotate: 45deg;
+}
+
+.radio_meme_3:checked ~ .meme_img .meme_img_3{
+    height: 20rem;
+}
+.radio_meme_3:checked ~ .title .meme_title{
+    color: black;
+}
+.radio_meme_3:checked ~ .title .meme_crosshair{
+    opacity: 1;
+    transition: 0.2s;
+    rotate: 45deg;
+}
+
+.radio_meme_4:checked ~ .meme_img .meme_img_4{
+    height: 20rem;
+}
+.radio_meme_4:checked ~ .title .meme_title{
+    color: black;
+}
+.radio_meme_4:checked ~ .title .meme_crosshair{
+    opacity: 1;
+    transition: 0.2s;
+    rotate: 45deg;
+}
+
+.radio_meme_5:checked ~ .meme_img .meme_img_5{
+    height: 20rem;
+}
+.radio_meme_5:checked ~ .title .meme_title{
+    color: black;
+}
+.radio_meme_5:checked ~ .title .meme_crosshair{
+    opacity: 1;
+    transition: 0.2s;
+    rotate: 45deg;
+}
+.meme_img{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 821px){
+    .container_header{
+        font-size: 3.5rem;
+    }
+    .meme_title{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .container_header{
+        font-size: 1.5rem;
+    }
+    .meme_img_1, .meme_img_2, .meme_img_3, .meme_img_4, .meme_img_5{
+        max-height: 14rem;
+    }
+    .meme_title{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    .meme_item:hover .meme_crosshair{
+        rotate: 45deg;
+    }
+    .meme_item_1:hover .meme_img_1{
+        height: 20rem;
+    }
+    .meme_item_2:hover .meme_img_2{
+        height: 20rem;
+    }
+    .meme_item_3:hover .meme_img_3{
+        height: 20rem;
+    }
+    .meme_item_4:hover .meme_img_4{
+        height: 20rem;
+    }
+    .meme_item_5:hover .meme_img_5{
+        height: 20rem;
+    }
+    .meme_container:hover{
+        cursor: pointer;
+    }
+    .meme_container:hover .meme_title{
+        color: black;
+        transition: 0.2s;
+    }
+    .meme_container:hover .meme_crosshair{
+        opacity: 1;
+        transition: 0.2s;
+    }
+    .title:hover{
+        cursor: pointer;
+    }
+}
